@@ -5,7 +5,7 @@ library(parallel)
 library(ape)
 
 #set working directory
-#example: setwd("/mnt/home/sarv7016/final_simulation_study/fixed_root_simulations/")
+#example: setwd("~/final_simulation_study/fixed_root_simulations/")
 
 #we first need to produce MCC trees for each of the replicates in question
 #specify the directories of interest sub to the main directory
