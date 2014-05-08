@@ -25,8 +25,8 @@ require(TreeSim)
 (log(500)-(log(2)))/5 # 1.104292
 2*((log(500)-(log(2)))/5) # 2.208584
 
-tree_25 <- sim.bd.taxa.age(n=25, numbsim=1, age=.5, lambda=.5051457, mu=0, frac=1.0, mrca=FALSE)
-tree_100 <- sim.bd.taxa.age(n=100, numbsim=1, age=0.5, lambda=7.824046, mu=0, frac=1.0, mrca=FALSE)
+tree_25 <- sim.bd.taxa.age(n=25, numbsim=1, age=5, lambda=0.5051457, mu=0, frac=1.0, mrca=FALSE)
+tree_100 <- sim.bd.taxa.age(n=100, numbsim=1, age=5, lambda=0.7824046, mu=0, frac=1.0, mrca=FALSE)
 tree_500 <- sim.bd.taxa.age(n=500, numbsim=1, age=5, lambda=1.104, mu=0, frac=1.0, mrca=FALSE)
 
 write.tree(phy=tree_25[[1]], file="25.tree.phy")
