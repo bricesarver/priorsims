@@ -6,7 +6,9 @@
 #prior to generate trees (i.e. sample without considering the data; the data is listed
 #as 'NNN' for each individual in the data block of the XML file.
 
-setwd("~/Desktop/Final Simulation Study/fixed_root_simulations/")
+#set working directory
+#example:
+#setwd("~/Desktop/Final Simulation Study/fixed_root_simulations/")
 
 rm(list=ls())
 require(ape)
@@ -25,7 +27,8 @@ require(TreeSim)
 
 tree_25 <- sim.bd.taxa.age(n=25, numbsim=1, age=.5, lambda=.5051457, mu=0, frac=1.0, mrca=FALSE)
 tree_100 <- sim.bd.taxa.age(n=100, numbsim=1, age=0.5, lambda=7.824046, mu=0, frac=1.0, mrca=FALSE)
-tree_500 <- sim.bd.taxa.age(n=500, numbsim=1, age=5, lambda=1.104, mu=0, frac=1.0)
+tree_500 <- sim.bd.taxa.age(n=500, numbsim=1, age=5, lambda=1.104, mu=0, frac=1.0, mrca=FALSE)
 
 write.tree(phy=tree_25[[1]], file="25.tree.phy")
+write.tree(phy=tree_100[[1]], file="100.tree.phy")
 write.tree(phy=tree_500[[1]], file="500.tree.phy")
