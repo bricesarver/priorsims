@@ -5,17 +5,17 @@ using BEAST, and estimate diversification parameters.
 
 ##Dependencies
 In addition to R, you will need:
-*BEAST v1.7.5
+* BEAST v1.7.5
 This approach ought to work with BEAST v2.0+, though I expect there to be differences in the XML input
-*Seq-Gen
-*BEASTifier
+* Seq-Gen
+* BEASTifier
 
 You will also need several R libraries:
-*parallel
-*ape
-*laser
-*TreeSim
-*geiger
+* parallel
+* ape
+* laser
+* TreeSim
+* geiger
 
 You can install these, and their dependencies, from the command line i.e.:
 ```
