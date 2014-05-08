@@ -1,4 +1,4 @@
-##tree_processing_laser.R
+##tree_processing.R
 ##processes the results from a folder of results for the simulation study
 
 rm(list=ls())
