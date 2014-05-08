@@ -5,8 +5,10 @@ using BEAST, and estimate diversification parameters.
 
 ##Dependencies
 In addition to R, you will need:
-* BEAST v1.7.5 *
+* BEAST v1.7.5
+
 This approach ought to work with BEAST v2.0+, though I expect there to be differences in the XML input
+
 * Seq-Gen
 * BEASTifier
 
