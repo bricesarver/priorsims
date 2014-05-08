@@ -66,14 +66,14 @@ setwd("/../..")
 #example: bdstrictpath <- "~/fixed_root_simulations/100.bd.strict.subst.trees.directory/annotated_trees"
 #example: bdstrictorigpath <- "~/fixed_root_simulations/"
 
-bduclnpath <- "/mnt/home/sarv7016/final_simulation_study/fixed_root_simulations/100.bd.ucln.subst.trees.directory/annotated_trees"
-bduclnorigpath <- "/mnt/home/sarv7016/final_simulation_study/fixed_root_simulations/"
+bduclnpath <- 
+bduclnorigpath <- 
 
-yulestrictpath <- "/mnt/home/sarv7016/final_simulation_study/fixed_root_simulations_yule/100.yule.strict.subst.trees.directory/annotated_trees"
-yulestrictorigpath <- "/mnt/home/sarv7016/final_simulation_study/fixed_root_simulations_yule/"
+yulestrictpath <- 
+yulestrictorigpath <- 
 
-yuleuclnpath <- "/mnt/home/sarv7016/final_simulation_study/fixed_root_simulations_yule/100.yule.strict.subst.trees.directory/annotated_trees"
-yuleuclnorigpath <- "/mnt/home/sarv7016/final_simulation_study/fixed_root_simulations_yule/"
+yuleuclnpath <- 
+yuleuclnorigpath <- 
 
 
 original_posterior_bds <- read.nexus(paste(bdstrictorigpath, "100.bd.strict.(time).trees", sep=""))
