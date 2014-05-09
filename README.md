@@ -8,7 +8,7 @@ In addition to R, you will need:
 * [BEAST v1.7.5](https://code.google.com/p/beast-mcmc/downloads/list?can=4&q=)
 
 This approach ought to work with BEAST v2.0+, though I expect there to be differences in the XML input 
-that may not be compatible with BEASTifier
+that may not be compatible with BEASTifier.
 
 * [Seq-Gen](http://tree.bio.ed.ac.uk/software/seqgen/)
 * [BEASTifier](https://github.com/josephwb/BEASTifier)
@@ -50,7 +50,7 @@ If you have an XML template, it is possible to automate this approach.  Alternat
 done by hand.
 
 **Caution:** BEAST will fail to execute if the starting tree is not compatible with constraints imposed 
-by fixing priors.  It may be advisable to incorporate some 'wiggle room' into certain parameters, just to be safe.  
+by fixing priors.  It is advisable to incorporate some 'wiggle room' into certain parameters, just to be safe.  
 I have found that fixing the root age at a strict value (by, say, using a narrow uniform prior) often halts 
 execution, whereas placing a prior without hard bounds (like, say, a uniform prior with a mean of the value you want 
 and a small standard deviation) works much better.
@@ -79,7 +79,10 @@ for your needs.
 This step is computationally intensive.  One BEAST run is performed for each XML file.  I recommend determining 
 the number of generations needed to achieve a reasonable ESS and stationarity.  For the 100 taxa datasets with the 
 most complex tree prior and clock model (BD:UCLN), I found that 50,000,000 (sampling every 5000) 
-was sufficient.
+was sufficient.  I performed hundreds of runs in parallel on a distributed cluster; if you do not 
+have access to such a system, your analysis will be bottlenecked by the number of CPUs.  RAM should 
+not be an issue, though removing R objects from memory [rm()] and running garbage collection [gc()] 
+can alleviate this issue once parameters are summarized.
 
 **tree_processing.R** contains code, using parallel processing, that rescales trees and calculates 
 MLEs of speciation and net diversification for use in plots (or summary tables).
