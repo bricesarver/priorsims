@@ -81,7 +81,7 @@ the number of generations needed to achieve a reasonable ESS and stationarity.  
 most complex tree prior and clock model (BD:UCLN), I found that 50,000,000 (sampling every 5000) 
 was sufficient.  I performed hundreds of runs in parallel on a distributed cluster; if you do not 
 have access to such a system, your analysis will be bottlenecked by the number of CPUs.  RAM should 
-not be an issue, though removing R objects from memory [rm()] and running garbage collection [gc()] 
+not be an issue, though removing R objects from memory using ```rm()``` and performing garbage collection using ```gc()``` 
 can alleviate this issue once parameters are summarized.
 
 **tree_processing.R** contains code, using parallel processing, that rescales trees and calculates 
