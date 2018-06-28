@@ -93,7 +93,3 @@ MLEs of speciation and net diversification for use in plots (or summary tables).
 
 **make_ltt_plots.R** contains code to make lineage-through-time plots from maximum clade credibility 
 trees summarized using TreeAnnotator.
-
-## Questions? Concerns?  Feel free to contact me. 
-
-
